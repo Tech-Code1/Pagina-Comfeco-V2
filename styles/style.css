@@ -1,10 +1,20 @@
-.body-style {
+:root {
+    /* colores de la página */
+    --dark-color-one: #141414;
+    --color-font-white: #FFFFFF;
+    --color-principal-green: #28E547;
+    --color-accent-purple: #8A178C;
+    --color-accent-orange: #ED930B;
+    /* Tipo de letras de la página */
     
+    /* tamaño letra */
+    --font-size-twenty: 20px;
+ 
 }
 
 .navbar-principal {
     height: 100px;
-    background-color: #FFFFFF;
+    background-color: var(--color-font-white);
     padding: 0 26px;
 }
 
@@ -14,8 +24,8 @@
 }
 
 .navbar-btn-one {
-    background-color: #8A178C;
-    color: #FFFFFF;
+    background-color: var(--color-accent-purple) ;
+    color: var(--color-font-white);
     border: none;
     margin-right: 32px;
 }
@@ -24,16 +34,13 @@
 .navbar-btn-two {
     height: 44px;
     outline: none;
-    font-size: 20px;
+    font-size: var(--font-size-twenty);
     cursor: pointer;
     border-radius: 5px;
     padding: 0 8px;
     font-weight: 500;
 }
 
- .icon-github-bton-nav{
-    fill: white;
-}
 
 .icon-github-bton-nav,
 .icon-money-bton-nav {
@@ -42,9 +49,9 @@
 
 
 .navbar-btn-two {
-    background-color: #FFFFFF;
-    color: #141414;
-    border: 2px solid #8A178C;
+    background-color: var(--color-font-white);
+    color: var(--dark-color-one);
+    border: 2px solid var(--color-accent-purple);
 }
 
 .navbar-btn-one:hover .icon-github-bton-nav{
@@ -52,9 +59,9 @@
 }
 
 .navbar-btn-one:hover {
-    background-color: #FFFFFF;
-    color: #141414;
-    border: 2px solid #8A178C;
+    background-color: var(--color-font-white);
+    color: var(--dark-color-one);
+    border: 2px solid var(--color-accent-purple);
 }
 
 .navbar-btn-two:hover .icon-money-bton-nav{
@@ -62,6 +69,6 @@
 }
 
 .navbar-btn-two:hover {
-    background-color: #8A178C;
-    color: #FFFFFF;
+    background-color: var(--color-accent-purple);
+    color: var(--color-font-white);
 }
