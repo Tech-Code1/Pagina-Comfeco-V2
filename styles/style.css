@@ -1,0 +1,67 @@
+.body-style {
+    
+}
+
+.navbar-principal {
+    height: 100px;
+    background-color: #FFFFFF;
+    padding: 0 26px;
+}
+
+.logo-principal-navbar {
+    width: 225px;
+    height: 60px;
+}
+
+.navbar-btn-one {
+    background-color: #8A178C;
+    color: #FFFFFF;
+    border: none;
+    margin-right: 32px;
+}
+
+.navbar-btn-one,
+.navbar-btn-two {
+    height: 44px;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0 8px;
+    font-weight: 500;
+}
+
+ .icon-github-bton-nav{
+    fill: white;
+}
+
+.icon-github-bton-nav,
+.icon-money-bton-nav {
+    margin-right: 8px;
+}
+
+
+.navbar-btn-two {
+    background-color: #FFFFFF;
+    color: #141414;
+    border: 2px solid #8A178C;
+}
+
+.navbar-btn-one:hover .icon-github-bton-nav{
+    filter:invert(1)
+}
+
+.navbar-btn-one:hover {
+    background-color: #FFFFFF;
+    color: #141414;
+    border: 2px solid #8A178C;
+}
+
+.navbar-btn-two:hover .icon-money-bton-nav{
+    filter:invert(1)
+}
+
+.navbar-btn-two:hover {
+    background-color: #8A178C;
+    color: #FFFFFF;
+}
