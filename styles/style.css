@@ -4,19 +4,22 @@
     --color-font-white: #FFFFFF;
     --color-principal-green: #28E547;
     --color-accent-purple: #8A178C;
-    --color-accent-orange: #ED930B;
+    --color-accent-yellow: #FFB703;
     /* Tipo de letras de la página */
     
     /* tamaño letra */
     --font-size-twenty: 20px;
- 
+    --font-size-sixteen: 16px;
 }
 
 .navbar-principal {
+    display: flex;
     height: 100px;
     background-color: var(--color-font-white);
     padding: 0 26px;
 }
+
+
 
 .logo-principal-navbar {
     width: 225px;
@@ -31,7 +34,8 @@
 }
 
 .navbar-btn-one,
-.navbar-btn-two {
+.navbar-btn-two,
+.btn-see-project {
     height: 44px;
     outline: none;
     font-size: var(--font-size-twenty);
@@ -62,6 +66,7 @@
     background-color: var(--color-font-white);
     color: var(--dark-color-one);
     border: 2px solid var(--color-accent-purple);
+    transition: 0.3s;
 }
 
 .navbar-btn-two:hover .icon-money-bton-nav{
@@ -71,4 +76,86 @@
 .navbar-btn-two:hover {
     background-color: var(--color-accent-purple);
     color: var(--color-font-white);
+    transition: 0.3s;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        height: 150px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-btn-one,
+    .navbar-btn-two {
+        font-size: var(--font-size-sixteen);
+    }
+}
+
+.banner-comfeco {
+    height: 404px;
+    background: url(../images/png/banner-information.png) no-repeat center;
+    background-size: cover;
+}
+
+@media (max-width: 991px) {
+    .banner-comfeco {
+        height: auto;
+    }
+}
+
+.content-info-banner {
+    padding: 0 40px 0 26px;
+}
+
+.content-btn-see-project {
+    padding-right: 26px;
+}
+
+.title-principal {
+    color: var(--color-accent-yellow);
+}
+
+.subtitle-principal,
+.text-info-comfeco,
+.paragraph-principal-comfeco,
+.text-project-win {
+    color: var(--color-font-white);
+}
+
+.text-project-win {
+    width: 200px;
+    font-weight: bold;
+}
+
+@media (max-width: 991px) {
+     .subtitle-principal,
+     .text-info-comfeco {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+    .text-project-win {
+        font-size: 14px;
+        width: 150px;
+    }
+}
+
+.btn-see-project {
+    background-color: var(--color-accent-yellow);
+    color: var(--color-accent-purple);
+    border: none;
+}
+
+.btn-see-project:hover {
+    background-color: var(--color-accent-purple);
+    color: var(--color-accent-yellow);
+    transition: 0.3s;
+}
+
+@media (max-width: 991px) {
+    .btn-see-project {
+        font-size: 14px;
+    }
 }
