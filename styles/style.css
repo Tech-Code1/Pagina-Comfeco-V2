@@ -1,7 +1,7 @@
 :root {
     /* colores de la página */
     --dark-color-one: #141414;
-    --dark-color-two: #2E2E2E
+    --dark-color-two: #2E2E2E;
     --color-font-white: #FFFFFF;
     --color-font-gray: #D6D6D6;
     --second-color: #69156A;
@@ -263,8 +263,8 @@
 }
 
 .article-contribution {
-    width: 48% !important;
     height: 780px;
+    width: 100%;
     background: var(--color-font-white);
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
 }
@@ -279,6 +279,26 @@
     color: var(--color-accent-yellow);
 }
 
+@media (max-width: 576px) {
+    .title-principal-contribution{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-card-one-contribution{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .icon-contribution, 
+    .icon-diploma {
+        height: 84px;
+        width: 84px;
+    }
+}
+
 .btn-join-develop {
     height: 74px;
     width: auto;
@@ -290,11 +310,66 @@
     border-radius: 10px;
 }
 
+@media (max-width: 576px) {
+    .btn-join-develop {
+        height: 64px;
+        font-size: var(--font-size-twenty);
+    }
+}
+
 .btn-join-develop:hover {
     background-color: var(--second-color);
     color: var(--color-accent-yellow);
 }
 
 .bton-pay-contribution {
+    width: 448px;
+    height: 158px;
+    background: var(--dark-color-two);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
 
+.bton-pay-contribution:hover .content-icon-contribution {
+    border: 2px solid var(--color-accent-yellow);
+}
+
+.bton-pay-contribution:hover .title-contribution{
+    color: var(--color-accent-yellow);
+}
+
+@media (max-width: 576px) {
+    .bton-pay-contribution {
+        width: 220px;
+        height: 120px;
+    }
+}
+
+.title-contribution {
+    color: var(--color-font-white);
+}
+
+.content-icon-contribution {
+    width: 112px;
+    height: 112px;
+    background: var(--color-font-white);
+    border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+    .content-icon-contribution {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+@media (max-width: 576px) {
+    .icon-paypal,
+    .icon-patreon {
+        width: 48px;
+        height: 48px;
+    }
 }
