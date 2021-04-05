@@ -2,8 +2,11 @@
     /* colores de la página */
     --dark-color-one: #141414;
     --color-font-white: #FFFFFF;
+    --color-font-gray: #D6D6D6;
+    --second-color: #69156A;
     --color-principal-green: #28E547;
     --color-accent-purple: #8A178C;
+    --color-accent-pink: #ECADF6;
     --color-accent-yellow: #FFB703;
     /* Tipo de letras de la página */
     
@@ -158,4 +161,102 @@
     .btn-see-project {
         font-size: 14px;
     }
+}
+
+.background-dark {
+    background-color: var(--dark-color-one);
+    height: auto;
+}
+
+@media (max-width: 1364px) {
+    .background-dark {
+        height: auto;
+    }
+}
+
+.text-open-source {
+    color: var(--color-accent-pink);
+}
+
+.btn-circle-down {
+    border-radius: 50%;
+    background-color: var(--color-accent-yellow);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 62px;
+    width: 62px;
+}
+
+.btn-circle-down:hover {
+    height: 68px;
+    width: 68px;
+    border: 2px solid var(--color-accent-purple);
+    transition: 0.3s;
+}
+
+.img-leader {
+    width: 212px;
+    height: 167px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content-information-cards-carrousel {
+    background-color: var(--second-color);
+    width: 212px;
+    height: 86px;
+}
+
+
+@media (max-width: 1295px) {
+    .content-card-carrousel{
+        margin: 0 45px;
+    }
+}
+
+.name-leader-card-carrousel {
+    color: var(--color-font-white);
+}
+
+.subtitle-card-carrousel {
+    color: var(--color-font-gray);
+}
+
+.content-social-media-carrousel {
+    bottom: 15px;
+    width: 100%;
+}
+
+.social-media-carrousel {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: var(--color-font-white);
+}
+
+.content-card-carrousel:hover .content-social-media-carrousel {
+    display: flex !important;
+}
+
+.social-media-carrousel:hover {
+    border: solid 2px var(--color-accent-purple);
+    transition: 0.3s;
+}
+
+.button-previous-carrousel {
+    margin-left: 26px;
+    background: linear-gradient(-270deg, #FFFFFF -296.81%, rgba(255, 255, 255, 0) 104.79%) !important;
+}
+
+.button-next-carrousel {
+    margin-right: 26px;
+    background: linear-gradient(270deg, #FFFFFF -296.81%, rgba(255, 255, 255, 0) 104.79%)  !important;
+}
+
+.button-previous-carrousel,
+.button-next-carrousel {
+    height: 100%;
+    width: 98px !important;
+   
 }
