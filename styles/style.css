@@ -373,3 +373,37 @@
         height: 48px;
     }
 }
+
+.footer-style {
+    background: var(--dark-color-two);
+    height: 200px;
+}
+
+@media (max-width: 800px) {
+    .footer-style {
+        height: auto;
+    }
+}
+
+.paragraph-footer {
+    margin-left: 26px;
+}
+
+.content-social-media-footer {
+    margin-right: 26px;
+}
+
+.paragraph-footer,
+.paragraph-footer-two {
+    font-weight: bold;
+    color: var(--color-font-white);
+}
+
+.text-community {
+    color: var(--color-accent-yellow);
+    cursor: pointer;
+}
+
+.text-community:hover {
+    color: var(--color-accent-pink)
+}
