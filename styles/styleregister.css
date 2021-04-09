@@ -1,0 +1,25 @@
+:root {
+    /* colores de la página */
+    --dark-color-one: #141414;
+    --dark-color-two: #2E2E2E;
+    --color-font-white: #FFFFFF;
+    --color-font-gray: #D6D6D6;
+    --second-color: #69156A;
+    --color-principal-green: #28E547;
+    --color-accent-purple: #8A178C;
+    --color-accent-pink: #ECADF6;
+    --color-accent-yellow: #FFB703;
+    /* Tipo de letras de la página */
+    
+    /* tamaño letra */
+    --font-size-twenty: 20px;
+    --font-size-sixteen: 16px;
+    --font-size-big: 24px;
+}
+
+.box-register {
+    width: 810px;
+    height: 812px;
+    background-color: var(--color-font-white);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.12);
+}

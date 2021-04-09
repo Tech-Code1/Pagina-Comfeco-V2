@@ -308,6 +308,8 @@
     font-size: var(--font-size-big);
     font-weight: bold;
     border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 @media (max-width: 576px) {
