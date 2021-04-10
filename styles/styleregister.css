@@ -112,3 +112,7 @@
     font-family: var(--font-roboto);
     font-weight: bold;
 }
+
+.section-resgister {
+    background: url(../images/svg/backgroun-register.svg) no-repeat center;
+}
