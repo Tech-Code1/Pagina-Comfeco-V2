@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="/images/png/logo-comfeco.png" />
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/styleregister.css">
         <link
@@ -12,6 +13,8 @@
 			integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
 			crossorigin="anonymous"
 		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 		<title>Registro</title>
 	</head>
 	<body>
@@ -35,8 +38,49 @@
 <!-- ******************** Register ******************** -->
         <main class="container-fluid row">
             <section class="d-flex justify-content-center col-12 col-lg-12">
-                <form class="box-register my-5">
-
+                <form class="d-flex flex-column align-items-center box-register my-5 justify-content-center">
+					<h1 class="text-principal-register mb-5">Ayudanos a crear la plataforma de Comfeco para el 2022</h1>
+					<div class="d-flex">
+					    <label class="d-flex flex-column label-style me-5" for=""> Nombre
+						    <input class="input-style" type="text" name="" id="" placeholder="Jhon">
+					    </label>
+					    <label class="d-flex flex-column label-style ms-5" for=""> Apellido
+						    <input class="input-style" type="text" name="" id="" placeholder="Doe">
+					    </label>
+				    </div>
+					<div class="d-flex mt-4">
+					    <label class="d-flex flex-column label-style me-5" for=""> Email
+						    <input class="input-style" type="email" name="" id="" placeholder="Jhon.doe@gmail.com">
+					    </label>
+					    <label class="d-flex flex-column label-style ms-5" for=""> GitHub
+						    <input class="input-style" type="text" name="" id="" placeholder="Jhon.doe123">
+					    </label>
+				    </div>
+					<label class="d-flex flex-column label-style mt-4" for=""> Area en la que quieres colaborar
+						<select class="input-style-select" name="" id="">
+							<option value="seleccionar" selected disabled>Seleccionar</option>
+							<option value="">UI/UX</option>
+							<option value="">Frontend</option>
+							<option value="">Backend</option>
+							<option value="">Base de datos</option>
+							<option value="">Testing</option>
+						</select>
+					</label>
+					<label class="d-flex flex-column label-style mt-4" for=""> Comentarios
+						<textarea class="input-style-textarea" name="" id="" cols="30" rows="10" placeholder="Escribenos cualquier inquietud o novedad">
+						</textarea>
+					</label>
+						<button class="btn-sent-style mt-4" >Enviar</button>
+						<div class="d-flex justify-content-between align-items-center mt-4 content-lines-register">
+							<div class="line-register"></div>
+							<p class="char-o m-0">o</p>
+							<div class="line-register"></div>
+						</div>
+						<div class="d-flex mt-4 align-items-center">
+							<p class="text-discord m-0 me-3">Escribenos en Discord</p>
+							<a href="https://discord.com/invite/programadores" target="_blank"><img src="images/svg/Discord.svg" alt=""></a>
+						</div>
+					
                 </form>
             </section>
         </main>

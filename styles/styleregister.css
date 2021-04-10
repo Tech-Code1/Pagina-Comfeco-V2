@@ -9,7 +9,9 @@
     --color-accent-purple: #8A178C;
     --color-accent-pink: #ECADF6;
     --color-accent-yellow: #FFB703;
+
     /* Tipo de letras de la página */
+    --font-roboto: 'Roboto', sans-serif;
     
     /* tamaño letra */
     --font-size-twenty: 20px;
@@ -19,7 +21,94 @@
 
 .box-register {
     width: 810px;
-    height: 812px;
+    height: 790px;
     background-color: var(--color-font-white);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.12);
+}
+
+.input-style-select {
+    width: 662px;
+    height: 50px;
+    padding: 0 16px;
+}
+
+.input-style {
+    width: 283px;
+    height: 50px;
+    padding: 0 16px;
+}
+
+.input-style-textarea {
+    width: 662px;
+    height: 134px;
+    padding-top: 16px;
+    padding: 16px 16px;
+}
+
+.input-style,
+.input-style-select,
+.input-style-textarea {
+    outline: none;
+    border: none;
+    border-bottom: 3px solid var(--color-accent-purple);
+    border-radius: 5px 5px 0 0;
+    background: transparent;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    color: var(--second-color);
+}
+
+.input-style:focus,
+.input-style-select:focus,
+.input-style-textarea:focus {
+    background: linear-gradient(180deg, #FFB703 -190%, rgba(255, 183, 3, 0) 72.22%);
+}
+
+.label-style {
+    font-weight: bold;
+    font-family: var(--font-roboto);
+}
+
+.text-principal-register {
+    font-family: var(--font-roboto);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 33px;
+    width: 486px;
+    text-align: center;
+    color: var(--color-accent-purple);
+}
+
+.btn-sent-style {
+    outline: none;
+    border: none;
+    font-family: var(--font-roboto);
+    color: var(--color-accent-purple);
+    background: var(--color-accent-yellow);
+    height: 44px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 662px;
+}
+
+.btn-sent-style:hover {
+    color: var(--color-accent-yellow);
+    background: var(--color-accent-purple);
+}
+
+.line-register {
+    height: 2px;
+    width: 250px;
+    background: var(--dark-color-one);
+}
+
+.content-lines-register {
+    width: 662px;
+}
+
+.char-o,
+.text-discord {
+    font-family: var(--font-roboto);
+    font-weight: bold;
 }
